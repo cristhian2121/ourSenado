@@ -22,7 +22,7 @@ body {
 }
 
 .header {  
-  height: 60px;
+  height: min-content;
   background: darkgoldenrod;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .sidebar--li {
-  
+
 }
 
 
@@ -76,6 +76,7 @@ body {
 .card--img {
   width: 100%;
   border-radius: 7px;
+  object-fit: cover;
 }
 
 .hero--card {
