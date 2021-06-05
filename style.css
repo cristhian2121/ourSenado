@@ -9,20 +9,41 @@ body {
   height: 100%;
 }
 
+/* HEADER */
+
 .heder--title {
   align-items: center;
   font-size: 2rem;
 }
 
-.header {
+.header--notice {
+  font-size: 0.8rem;
+  width: 50px;
+}
+
+.header {  
   height: 60px;
   background: darkgoldenrod;
 }
+
+
+/* Side bar */
 
 .sidebar {
   background-color: aqua;
   grid-column: 1 / 2;
 }
+
+.sidebar ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.sidebar--li {
+  
+}
+
+
 
 /* HERO */
 
@@ -39,6 +60,7 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(5, 1fr);  
   /* grid-template: repeat(
     5,
     5 /* calc(
@@ -59,4 +81,17 @@ body {
 .hero--card {
   background: cornflowerblue;
   border-radius: 5px;
+}
+
+/* Queries */
+
+@media (max-width: 625px) {
+  .sidebar {
+    grid-row: 1;
+    grid-column: 1 / 6;
+  }
+
+  .hero {
+    grid-column: 1/6;
+  }
 }
